@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  p{
+    font-size: larger;
+    font-style: poppins;
+  }
+  header{
+    text-align: center;
+    padding: 20px;
+  }
+  header h2{
+    font-size: 35px;
+    font-family: poppins;
+  }
+  main{
+    /* padding: 20px; */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* gap: 50px; */
+  }
+  nav,aside{
+    border: 1px solid gray;
+    padding: 50px 20px;
+  }
+  nav{
+    border-left: none;
+  }
+  nav p,aside p,h4{
+    text-decoration: underline;
+    margin: 10px 0;
+  }
+  article{
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    grid-column: 2 / span 3;
+    padding: 80px 50px;
+  }
+  article h1{
+    font-size: 60px;
+    font-family: poppins;
+  }
+  article h1:nth-child(2){
+    margin-bottom: 40px;
+  }
+  article img{
+    width: 100%;
+  }
+  article p{
+    padding-top: 50px;
+    line-height: 30px;
+  }
+  aside{
+    border-left: 1px solid gray;
+  } 
+  footer{
+    text-align: center;
+    padding: 50px;
+  }
+@media(max-width:960px){
+  nav{
+    grid-column: span 5;
+    border-right: 0;
+    border-bottom: 1px solid gray;
+  }
+  nav p{
+    display: inline-block;
+  }
+  article{
+    grid-column: 1 / span 4;
+  }
+  article h1{
+    font-size: 45px;
+  }
+  aside{
+    padding: 16px;
+  }
+}
+@media(max-width:660px){
+  nav,article,aside{
+    grid-column: span 3;
+    border: none;
+  }
+  nav{
+    
+  }
+  article{
+    grid-column: 1 / span 4;
+    padding: 50px 20px;
+  }
+  article h1{
+    font-size: 45px;
+  }
+  aside{
+    
+  }
+}
